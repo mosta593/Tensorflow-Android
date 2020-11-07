@@ -1,10 +1,10 @@
-# TensorFlow Examples
+# App usando Tensorflow (Lite) para reconocimiento de objetos mediante la cámara del dispositivo móvil
 
 <div align="center">
   <img src="https://www.tensorflow.org/images/tf_logo_social.png" /><br /><br />
 </div>
-# Tensorflow-Android
-App usando Tensorflow (Lite) para reconocimiento de objetos mediante la cámara del dispositivo móvil
+
+
 
 
 <h2>Links Importantes!</h2>
