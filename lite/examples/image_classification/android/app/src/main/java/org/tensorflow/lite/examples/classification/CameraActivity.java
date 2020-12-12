@@ -525,7 +525,10 @@ public abstract class CameraActivity extends AppCompatActivity
     if (results != null && results.size() >= 3) {
       Recognition recognition = results.get(0);
       if (recognition != null) {
-        if (recognition.getTitle() != null) recognitionTextView.setText(recognition.getTitle());
+        if (recognition.getTitle().equals("banana")) recognitionTextView.setText(recognition.getTitle()+" -- tipo: fruta");
+        else if (recognition.getTitle().equals("pineapple")) recognitionTextView.setText(recognition.getTitle()+" -- tipo : fruta");
+        else if (recognition.getTitle().equals("computer keyboard")) recognitionTextView.setText(recognition.getTitle()+" -- tipo : tecnologia");
+        else if (recognition.getTitle() != null) recognitionTextView.setText(recognition.getTitle());
         if (recognition.getConfidence() != null)
           recognitionValueTextView.setText(
               String.format("%.2f", (100 * recognition.getConfidence())) + "%");
